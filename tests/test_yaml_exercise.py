@@ -7,9 +7,9 @@ class TestYamlExercise(unittest.TestCase):
     maxDiff = None
 
     def setUp(self):
-        self.yaml_path = ".\\tests\example-file.yaml"
+        self.yaml_path = ".\\tests\yaml_files\example-file.yaml"
         self.result_path = "yaml_exercise\\result-yaml.yaml"
-        self.result_test_path = ".\\tests\\test-result-file.yaml"
+        self.result_test_path = ".\\tests\\yaml_files\\test-result-file.yaml"
         
         
 

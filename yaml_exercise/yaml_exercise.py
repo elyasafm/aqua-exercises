@@ -6,7 +6,7 @@ import io
 def parse_yaml(yaml_path: str) -> dict:
     with open(yaml_path, "r") as stream:
         try:
-            yaml_data = yaml.safe_load(stream)
+            yaml_data: dict = yaml.safe_load(stream)
             return yaml_data
 
         except yaml.YAMLError as e:
@@ -37,7 +37,7 @@ def append_compatible_key(key: str, value: Union[str, list, object], additional_
 
 def append_config(yaml_path: str, additional_config: dict):
     try:
-        yaml_data = parse_yaml(yaml_path)
+        yaml_data: dict = parse_yaml(yaml_path)
 
 
         for key, value in yaml_data.items():
