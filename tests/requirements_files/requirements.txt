@@ -1,6 +1,0 @@
-
--r requirements1.txt
-
-requests==2.26.0
-
--r requirements2.txt
