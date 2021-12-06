@@ -24,7 +24,7 @@ jobs:
 
       - name: Run tests
         run: |
-        pwd
-        python -m unittest discover -s aqua-exercise/tests
+          pwd
+          python -m unittest discover -s aqua-exercise/tests
 
 
