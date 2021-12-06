@@ -20,12 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          git checkout dev
+          ls -l
           python -m pip install -r requirements.txt --upgrade pip
 
       - name: Run tests
         run: |
-          git checkout dev
           python -m unittest discover -s tests
 
 
