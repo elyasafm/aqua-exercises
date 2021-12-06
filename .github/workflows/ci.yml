@@ -20,11 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-#               python -m pip install -r requirements\requirements.txt --upgrade pip
+          python -m pip install -r requirements.txt --upgrade pip
 
       - name: Run tests
         run: |
-          pwd
-          python -m unittest discover -s aqua-exercise/tests
+          python -m unittest discover -s tests
 
 
